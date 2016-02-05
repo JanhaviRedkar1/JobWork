@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JobBoardModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Job_Board_Table">
+    <Key>
+      <PropertyRef Name="Job_Id" />
+    </Key>
+    <Property Name="Job_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Job_Title" Type="varchar" MaxLength="50" />
+    <Property Name="Job_Desc" Type="varchar" MaxLength="250" />
+    <Property Name="Job_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Job_Skill" Type="varchar" MaxLength="500" />
+    <Property Name="Job_Resp" Type="varchar" MaxLength="500" />
+    <Property Name="Job_Start_Date" Type="varchar" MaxLength="50" />
+    <Property Name="Job_End_Date" Type="varchar" MaxLength="50" />
+    <Property Name="Job_Created_By" Type="varchar" MaxLength="50" />
+    <Property Name="Job_Created_Date" Type="varchar" MaxLength="50" />
+    <Property Name="Job_Updated_By" Type="varchar" MaxLength="50" />
+    <Property Name="Job_Updated_Date" Type="varchar" MaxLength="50" />
+    <Property Name="Job_Status" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="JobBoardModelStoreContainer">
+    <EntitySet Name="Job_Board_Table" EntityType="Self.Job_Board_Table" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

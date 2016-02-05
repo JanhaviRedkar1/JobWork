@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JobBoardModelStoreContainer" CdmEntityContainer="JobBoardEntities">
+    <EntitySetMapping Name="Job_Board_Table">
+      <EntityTypeMapping TypeName="JobBoardModel.Job_Board_Table">
+        <MappingFragment StoreEntitySet="Job_Board_Table">
+          <ScalarProperty Name="Job_Id" ColumnName="Job_Id" />
+          <ScalarProperty Name="Job_Title" ColumnName="Job_Title" />
+          <ScalarProperty Name="Job_Desc" ColumnName="Job_Desc" />
+          <ScalarProperty Name="Job_Type" ColumnName="Job_Type" />
+          <ScalarProperty Name="Job_Skill" ColumnName="Job_Skill" />
+          <ScalarProperty Name="Job_Resp" ColumnName="Job_Resp" />
+          <ScalarProperty Name="Job_Start_Date" ColumnName="Job_Start_Date" />
+          <ScalarProperty Name="Job_End_Date" ColumnName="Job_End_Date" />
+          <ScalarProperty Name="Job_Created_By" ColumnName="Job_Created_By" />
+          <ScalarProperty Name="Job_Created_Date" ColumnName="Job_Created_Date" />
+          <ScalarProperty Name="Job_Updated_By" ColumnName="Job_Updated_By" />
+          <ScalarProperty Name="Job_Updated_Date" ColumnName="Job_Updated_Date" />
+          <ScalarProperty Name="Job_Status" ColumnName="Job_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

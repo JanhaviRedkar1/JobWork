@@ -1,0 +1,81 @@
+﻿<section id="dashboard-view" class="mainbar" data-ng-controller="JDController as jdctrl" ">
+    <section class="matter">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wviolet">
+                        <div data-cc-widget-header title="{{jdctrl.jobs.Job_Id}}"
+                             allow-collapse="true"></div>
+
+                        <div class="widget-content text-left text-info">
+                            <table class="table table-condensed table-striped">
+                                <tr>
+                                <td>ID:</td>
+                                <td>{{jctrl.jobs.Job_ID}}</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Title:</td>
+                                    <td>{{jctrl.jobs.Job_Title}}</td>
+                                </tr>
+                                <tr>
+                                <td>Discreption:</td>
+                                <td>{{jctrl.jobs.Job_Desc}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Type:</td>
+                                    <td>{{jctrl.jobs.Job_Type}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Skills Required:</td>
+                                    <td>{{jctrl.jobs.Job_Skill}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Responsibilities:</td>
+                                    <td>{{jctrl.jobs.Job_Resp}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Start Date:</td>
+                                    <td>{{jctrl.jobs.Job_Start_Date}}</td>
+                                </tr>
+                                <tr>
+                                    <td>End Date:</td>
+                                    <td>{{jctrl.jobs.Job_End_Date}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Created By:</td>
+                                    <td>{{jctrl.jobs.Job_Created_By}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Craetion Date:</td>
+                                    <td>{{jctrl.jobs.Job_Created_Date}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Updated By:</td>
+                                    <td>{{jctrl.jobs.Job_Updated_By}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Updating Date:</td>
+                                    <td>{{jctrl.jobs.Job_Updated_Date}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Status:</td>
+                                    <td>{{jctrl.jobs.Job_Status}}</td>
+                                </tr>
+                               
+                            </table>
+                        </div>
+                        <div>
+                            <input type="submit" value="Apply"/>
+
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

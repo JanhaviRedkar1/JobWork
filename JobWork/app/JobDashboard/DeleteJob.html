@@ -1,0 +1,129 @@
+﻿<section id="dashboard-view" class="mainbar" data-ng-controller="JDController as jctrl ">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Update Job Job</h2>
+                    <form name="form" role="form" data-ng-submit="jctrl.addJobs()">
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="name">Job ID:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-key"></i>
+                                <
+                                <input type="text" name="Job_Id" id="Job_Id" class="form-control" data-ng-model="jctrl.newjob.Job_Id" required readonly />
+                                <span data-ng-show="form.name.$dirty && form.name.$error.required" class="help-block">Job ID is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Title">Job Title:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="text" name="Job_Title" id="Job_Title" class="form-control" data-ng-model="jctrl.newjob.Job_Title" required readonly />
+                                <span data-ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Job Title is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Title">Job Description:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="text" name="Job_Desc" id="Job_Desc" class="form-control" data-ng-model="jctrl.newjob.Job_Desc" required readonly />
+                                <span data-ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Job_Desc is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Type">Job Type:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <select class="form-control" data-ng-model-options="jctrl.newjob.Job_Type"readonly>
+                                    <option value="Full Time">Full Time</option>
+                                    <option value="Part Time">Part Time</option>
+                                </select>
+                                <span data-ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Job_Type is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Skills">Skills Required:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="text" name="Job_Skills" id="Job_Skills" class="form-control" data-ng-model="jctrl.newjob.Job_Skill" required readonly />
+                                <span data-ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Job Title is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Resp">Responsibilities:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="text" name="Job_Resp" id="Job_Resp" class="form-control" data-ng-model="jctrl.newjob.Job_Resp" required readonly />
+                                <span data-ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Job_Resp is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Start_Date">Start Date:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="date" name="Job_Start_Date" id="Job_Start_Date" class="form-control" data-ng-model="rctrl.newjob.Job_Start_Date" required readonly />
+                                <span data-ng-show="form.Job_Start_Date.$dirty && form.Job_Start_Date.$error.required" class="help-block">Choose a Date</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_End_Date">End Date:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="date" name="Job_End_Date" id="Job_End_Date" class="form-control" data-ng-model="rctrl.newjob.Job_End_Date" required readonly />
+                                <span data-ng-show="form.Job_End_Date.$dirty && form.Job_End_Date.$error.required" class="help-block">Choose a Date</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Created_By">Job Created By:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="text" name="Job_Created_By" id="Job_Created_By" class="form-control" data-ng-model="jctrl.newjob.Job_Created_By" required readonly />
+                                <span data-ng-show="form.Job_Created_By.$dirty && form.Job_Created_By.$error.required" class="help-block">Created By Whom?</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Job_Created_Date">Creation Date:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <i class="fa fa-lock"></i>
+                                <input type="date" name="Job_Created_Date" id="Job_Created_Date" class="form-control" data-ng-model="rctrl.newjob.Job_Created_Date" required readonly   />
+                                <span data-ng-show="form.Job_End_Date.$dirty && form.Job_End_Date.$error.required" class="help-block">Choose a Date</span>
+                            </div>
+                            <div class="form-actions">
+
+                                <div class="col-md-12">
+                                    <button type="submit">Delete Job</button>
+                                </div>
+                            </div>
+
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+</section>
+

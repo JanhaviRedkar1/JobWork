@@ -1,0 +1,54 @@
+﻿<section id="dashboard-view" class="mainbar" data-ng-controller="JDController as jctrl" ">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <a id="New_Job" data-ng-href=""  >Create a New Job</a>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wviolet">
+                        <div data-cc-widget-header title="Jobs"
+                             allow-collapse="true"></div>
+                        
+                        <div class="widget-content text-left text-info">
+                            <table class="table table-condensed table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Details</th>
+                                        <th>Job ID</th>
+                                        <th>Job Title</th>
+                                        <th>Job Discription</th>
+                                        <th>Update</th>
+                                        <th>Delete</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    
+                                    <tr data-ng-repeat="r in jctrl.job">
+                                        <td><a data-ng-href="#/{{r.Job_Id}}">Details</a></td>
+                                        <td>{{r.Job_Id}}</td>
+                                        <td>{{r.Job_Title}}</td>
+                                        <td>{{r.Job_Desc}}</td>
+                                        <td>Update</td>
+                                        <td>Delete</td>
+                                        
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
